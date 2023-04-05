@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Vite App</title>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <p v-cloak>{{ message }}</p>
+      <!-- 
+        컴포넌트가 준비되기 전에 v-cloak이 붙어서 등장한다.
+        이걸 이용해서 css로 display: none을 해 주면
+        컴포넌트가 준비되기 전에는 안 보이게 만들어줄 수 있다.
+      -->
+    </div>
+    <script>
+      const App = {
+        data() {
+          return {
+            message: '안녕하세요'
+          }
+        }
+      }
+
+      // 셋타임아웃으로 컴포넌트가 3초 뒤에 랜더링되게 했다. 
+      setTimeout(() => {
+        Vue.createApp(App).mount('#app')
+      }, 3000)
+    </script>
+  </body>
+</html>
