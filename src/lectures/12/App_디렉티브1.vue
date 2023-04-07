@@ -14,13 +14,6 @@
 		<!-- 
 			v-once는 최초 한 번만 랜더링된다.  
 			크롬 vue devtools에서 msg를 수정해보면, v-once가 붙은 태그들은 동기화가 안 되는 것을 확인할 수 있다.
-		-->
-		<p v-memo></p>
-		<!-- 
-			v-memo는 성능과 관련된 디렉티브다.
-			<div v-memo="[valueA, valueB]"></div> 
-
-			배열 안의 반응형 데이터가 변경되었을 때만 업데이트가 일어난다. 
 		 -->
 	</div>
 </template>
