@@ -3,7 +3,6 @@
 		<h1>이벤트 처리</h1>
 
 		<button @click="printEventInfo('Hello Vue3', $event)">
-			<!-- 인라인 핸들링에서 event 객체에 접근할 수 있습니다. 접근하는 방법는 $event 키워드를 사용합니다. -->
 			inline event handler
 		</button>
 		<hr />

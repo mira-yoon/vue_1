@@ -16,7 +16,7 @@
 export default {
 	setup() {
 		const printEventInfo = (message, event) => {
-			console.log('message: ', message);
+			console.log('message: ', message); // 'Hello Vue3'
 			console.log('event.target: ', event.target);
 			console.log('event.target.tagName: ', event.target.tagName);
 		};
