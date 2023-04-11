@@ -43,6 +43,7 @@ export default {
 			alert('좋아요');
 		};
 		const clickA = e => {
+			// 여기에 e를 사용하지 않는데 있기 때문에 esLint 때문에 에러가 난다. 에러표시 안되게 하려면 eslintrc.cjs에서 rules 부분에 'no-unused-vars' : 'off'를 추가하면 된다.
 			//e.preventDefault();
 			alert('어떤 기능~');
 		};
